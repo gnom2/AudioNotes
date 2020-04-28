@@ -1,0 +1,1735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./dist/main.css" />
+    <script src="https://kit.fontawesome.com/ed3d848a54.js" crossorigin="anonymous"></script>
+    <script src="bundle.js"></script>
+    <script src='./src/notes.js'></script>
+    <script src='./src/synth.js'></script>
+    <!-- <script src="https://unpkg.com/tone@13.8.25/build/Tone.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.4.9/Tone.js"></script>
+
+
+    <title>AudioNotes</title>
+</head>
+
+<body>
+    <main>
+        <div class="main">
+            <div class='top-menu'>
+                <h1>AudioNotes</h1>
+            </div>
+            <div id='audio-container'>
+                <canvas id="audio-note" width="150" height="750"></canvas>
+
+
+                <!-- Grid -->
+                <div class="note-container">
+                    <div class="row1">
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row1' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row1' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row1' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row1' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row1' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row1' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row1' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row1' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row1' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row1' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row1' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row1' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row1' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row1' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row1' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row1' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                    </div>
+
+                    <div class="row2">
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row2' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row2' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row2' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row2' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row2' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row2' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row2' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row2' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row2' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row2' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row2' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row2' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row2' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row2' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row2' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row2' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                    </div>
+
+                    <div class="row3">
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row3' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row3' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row3' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row3' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row3' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row3' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row3' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row3' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row3' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row3' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row3' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row3' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row3' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row3' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row3' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row3' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                    </div>
+
+                    <div class="row4">
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row4' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row4' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row4' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row4' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row4' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row4' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row4' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row4' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row4' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row4' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row4' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row4' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row4' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row4' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row4' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row4' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                    </div>
+
+                    <div class="row5">
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row5' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row5' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row5' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row5' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row5' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row5' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row5' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row5' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row5' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row5' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row5' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row5' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row5' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row5' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row5' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row5' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                    </div>
+
+                    <div class="row6">
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row6' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row6' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row6' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row6' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row6' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row6' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row6' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row6' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row6' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row6' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row6' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row6' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row6' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row6' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row6' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row6' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                    </div>
+
+                    <div class="row7">
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row7' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row7' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row7' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row7' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row7' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row7' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row7' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row7' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row7' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row7' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row7' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row7' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row7' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row7' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row7' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row7' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                    </div>
+
+                    <div class="row8">
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row8' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row8' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row8' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row8' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row8' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row8' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row8' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row8' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row8' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row8' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row8' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row8' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row8' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row8' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row8' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row8' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                    </div>
+
+                    <div class="row9">
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row9' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row9' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row9' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row9' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row9' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row9' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row9' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row9' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row9' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row9' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row9' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row9' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row9' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row9' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row9' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row9' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                    </div>
+
+                    <div class="row10">
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row10' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row10' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row10' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row10' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row10' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row10' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row10' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row10' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row10' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row10' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row10' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row10' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row10' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row10' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row10' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row10' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                    </div>
+
+                    <div class="row11">
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row11' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row11' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row11' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row11' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row11' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row11' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row11' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row11' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row11' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row11' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row11' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row11' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row11' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row11' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row11' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row11' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                    </div>
+
+                    <div class="row12">
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row12' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row12' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row12' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row12' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row12' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row12' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row12' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row12' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row12' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row12' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row12' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row12' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row12' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row12' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row12' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row12' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                    </div>
+
+                    <div class="row13">
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row13' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row13' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row13' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row13' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row13' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row13' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row13' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row13' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row13' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row13' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row13' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row13' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row13' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row13' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row13' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row13' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                    </div>
+
+                    <div class="row14">
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row14' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row14' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row14' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row14' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row14' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row14' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row14' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row14' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row14' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row14' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row14' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row14' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row14' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row14' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row14' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row14' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                    </div>
+
+                    <div class="row15">
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row15' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row15' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row15' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row15' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row15' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row15' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row15' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row15' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row15' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row15' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row15' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row15' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row15' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row15' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row15' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row15' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                    </div>
+
+                    <div class="row16">
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row16' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row16' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row16' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row16' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row16' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row16' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row16' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row16' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row16' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row16' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row16' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row16' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row16' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row16' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row16' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row16' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                    </div>
+
+                    <div class="row17">
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row17' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row17' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row17' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row17' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row17' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row17' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row17' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row17' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row17' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row17' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row17' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row17' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row17' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row17' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row17' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row17' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                    </div>
+
+                    <div class="row18">
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row18' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row18' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row18' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row18' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row18' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row18' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row18' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row18' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row18' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row18' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row18' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row18' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row18' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row18' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row18' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row18' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                    </div>
+
+                    <div class="row19">
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row19' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row19' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row19' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row19' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row19' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row19' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row19' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row19' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row19' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row19' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row19' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row19' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row19' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row19' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row19' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row19' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                    </div>
+
+                    <div class="row20">
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row20' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row20' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row20' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row20' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row20' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row20' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row20' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row20' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row20' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row20' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row20' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row20' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row20' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row20' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row20' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row20' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                    </div>
+
+                    <div class="row21">
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row21' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row21' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row21' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row21' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row21' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row21' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row21' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row21' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row21' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row21' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row21' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row21' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row21' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row21' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row21' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row21' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                    </div>
+
+                    <div class="row22">
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row22' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row22' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row22' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row22' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row22' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row22' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row22' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row22' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row22' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row22' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row22' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row22' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row22' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row22' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row22' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row22' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                    </div>
+
+                    <div class="row23">
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row23' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row23' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row23' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row23' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row23' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row23' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row23' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row23' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row23' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row23' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row23' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row23' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row23' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row23' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row23' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row23' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                    </div>
+
+                    <div class="row24">
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row24' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row24' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row24' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row24' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row24' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row24' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row24' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row24' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row24' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row24' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row24' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row24' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row24' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row24' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row24' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row24' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                    </div>
+
+                    <div class="row25">
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row25' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row25' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row25' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row25' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row25' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row25' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row25' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row25' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row25' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row25' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row25' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row25' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row25' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row25' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row25' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                        <label class='checkbox-label'>
+                            <input type="checkbox" class='checkbox-row25' />
+                            <div id='checkbox-style'></div>
+                        </label>
+                    </div>
+                </div>
+                <!-- End of grid -->
+            </div>
+            <div class='bottom-menu'>
+                <div class='bottom-menu-left'>
+                    <button class='play-btn'><i class="fas fa-play"></i></button>
+                    <button class='pause-btn'><i class="fas fa-pause"></i></button>
+                    <button class='rewind-btn'><i class="fas fa-backward"></i></button>
+                </div>
+                <div class='bottom-menu-right'>
+                    <div class='github-link'>
+                        <a href="">Github</a>
+                    </div>
+                    <div class='linkedin-link'>
+                        <a href="">LinkedIn</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+    </main>
+
+
+    <script src="./dist/main.js"></script>
+</body>
+
+</html>
