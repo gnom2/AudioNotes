@@ -8,6 +8,11 @@ html, body {
 
 }
 
+body {
+    background-image: url('http://www.dovecor.co.za/wp-content/uploads/2015/02/Music-notes.jpg');
+    background-size: cover;
+}
+
 .main {
     display: flex;
     justify-content: center; 
@@ -22,12 +27,23 @@ html, body {
     align-items: center;
 }
 
+.top-menu h1 {
+    font-family: 'Poiret One', cursive;
+    font-size: 50px;
+    letter-spacing: 7px;
+}
+
 #audio-container {
     margin-top: 50px;
     padding-bottom: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.audio-wrapper {
+    display: flex;
+    box-shadow: 0 0 10px #727272, 0 0 40px #727272, 0 0 80px #727272;
 }
 
 #audio-note {
@@ -37,7 +53,7 @@ html, body {
 .note-container {
     padding-top: 15px;
     width: 1060px;
-    height: 750px;
+    height: 735px;
     padding-left: 25px;
     border: 1px solid gray;
     background-color: rgb(230, 230, 230);
@@ -71,13 +87,22 @@ html, body {
 }
 
 .checkbox-label input:checked ~ #checkbox-style {
-    background-color: black;
+    background-color: #9dff4e;
+    transition: all 0.3s ease 0s;
+    box-shadow: 0 0 10px #9dff4e, 0 0 40px #9dff4e, 0 0 80px #9dff4e;
+    
 }
+
 
 .bottom-menu {
     position: relative;
     display: flex;
     justify-content: space-evenly;
+    width: 1240px;
+    height: 100px;
+    margin: 0 auto;
+    border: 1px solid #999999;
+    background-color: rgb(247, 247, 247);
 }
 
 .bottom-menu-left {
@@ -89,6 +114,19 @@ html, body {
 .bottom-menu-right {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    font-size: 35px;
+}
+
+.bottom-menu-right div a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Poiret One', cursive; 
+    letter-spacing: 4px;
+}
+
+.bottom-menu-right div {
+    margin-right: 40px;
 }
 
 .bottom-menu-left button {
@@ -98,4 +136,54 @@ html, body {
 
 .bottom-menu-left button i {
     font-size: 35px;
+    color: rgb(77, 77, 77);
+}
+
+.tempo-input {
+    font-family: 'Poiret One', cursive; 
+    font-size: 30px;
+    letter-spacing: 4px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.tempo-input input {
+    height: 40px;
+    width: 80px;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Poiret One', cursive; 
+    font-weight: 600;
+    letter-spacing: 4px;
+
+}
+
+.github-link, .linkedin-link {
+    position: relative;
+    display: inline-block;
+}
+
+.github-link > a:after, .linkedin-link > a:after  {
+	content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-top: 10px;
+  opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+.github-link > a:hover:after, .linkedin-link > a:hover:after{
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
 }

@@ -10,7 +10,8 @@ module.exports = {
         publicPath: "/dist/"
     },
     resolve: {
-        extensions: [".js"] // if we were using React.js, we would include ".jsx"
+        extensions: [".js"], // if we were using React.js, we would include ".jsx"
+        modules: [path.resolve(__dirname, 'node_modules/tone'), 'node_modules']
     },
     module: {
         rules: [
