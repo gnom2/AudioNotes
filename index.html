@@ -9,12 +9,6 @@
     <link rel="stylesheet" href="./dist/main.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ed3d848a54.js" crossorigin="anonymous"></script>
-    <!-- <script src="bundle.js"></script>
-    <script src='./src/notes.js'></script>
-    <script src='./src/synth.js'></script> -->
-    <!-- <script src="https://unpkg.com/tone@14.4.9/build/Tone.js"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.4.9/Tone.js"></script> -->
-    <!-- <script src="./node_modules/tone/build/Tone.js"></script> -->
 
     <title>AudioNotes</title>
 </head>
@@ -28,7 +22,44 @@
             </div>
             <div id='audio-container'>
                 <div class='audio-wrapper'>
-                    <canvas id="audio-note" width="150" height="750"></canvas>
+                    <!-- <canvas id="audio-note" width="150" height="750"></canvas> -->
+                    <div id='piano-roll'>
+                        <div class='whitenote note-1'></div>
+                        <div class='whitenote note-2'>
+                            <div class='blacknote note-3'></div>
+                        </div>
+                        <div class='whitenote note-4'>
+                            <div class='blacknote note-5'></div>
+                        </div>
+                        <div class='whitenote note-6'>
+                            <div class='blacknote note-7'></div>
+                        </div>
+                        <div class='whitenote note-8'></div>
+                        <div class='whitenote note-9'>
+                            <div class='blacknote note-10'></div>
+                        </div>
+                        <div class='whitenote note-11'>
+                            <div class='blacknote note-12'></div>
+                        </div>
+                        <div class='whitenote note-13'></div>
+                        <div class='whitenote note-14'>
+                            <div class='blacknote note-15'></div>
+                        </div>
+                        <div class='whitenote note-16'>
+                            <div class='blacknote note-17'></div>
+                        </div>
+                        <div class='whitenote note-18'>
+                            <div class='blacknote note-19'></div>
+                        </div>
+                        <div class='whitenote note-20'></div>
+                        <div class='whitenote note-21'>
+                            <div class='blacknote note-22'></div>
+                        </div>
+                        <div class='whitenote note-23'>
+                            <div class='blacknote note-24'></div>
+                        </div>
+                        <div class='whitenote note-25'></div>
+                    </div>
                     <!-- Grid -->
                     <div class="note-container">
                         <div class="row1">
@@ -1716,16 +1747,17 @@
                     <button class='pause-btn'><i class="fas fa-pause"></i></button>
                     <button class='rewind-btn'><i class="fas fa-backward"></i></button>
                 </div>
+                <button class='clear-btn'>CLEAR</button>
                 <div class='tempo-input'>
                     TEMPO
                     <input type="text" class='tempo-control' placeholder="128">
                 </div>
                 <div class='bottom-menu-right'>
                     <div class='github-link'>
-                        <a href="">Github</a>
+                        <a href="https://github.com/gnom2">Github</a>
                     </div>
                     <div class='linkedin-link'>
-                        <a href="">LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/jun-hyeok-scott-lee-18a62851/">LinkedIn</a>
                     </div>
                 </div>
 
@@ -1734,7 +1766,6 @@
         </div>
     </main>
 
-    <!-- <script type='module' src="./node_modules/tone/build/Tone.js"></script> -->
     <script src="./dist/main.js"></script>
 </body>
 

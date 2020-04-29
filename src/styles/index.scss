@@ -62,54 +62,12 @@ body {
     height: 4%;
 }
 
-.checkbox-label {
-    width: 60%;
-    height: 60%;
-}
-
-.checkbox-label > input {
-    position: absolute;
-    width: 25px;
-    margin-left: 10px;
-    opacity: 0;
-}
-
-#checkbox-style {
-    width: 15px;
-    height: 15px;
-    border: 1px solid rgb(17, 17, 17);
-    box-shadow:inset 0px 1px 0px 0px #ffffff;
-    background-color:#ededed;
-	border-radius:6px;
-	border:1px solid #d1cfcf;
-	display:inline-block;
-	cursor:pointer;
-    color:#777777;
-    padding:6px 24px;
-}
-
-#checkbox-style:hover, .checkbox-label:hover {
-    background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
-    background-color:#dfdfdf;
-}
-
-#checkbox-style:active {
-	position:relative;
-	top:1px;
-}
-
-.checkbox-label input:checked ~ #checkbox-style {
-    background-color: #9dff4e;
-    transition: all 0.3s ease 0s;
-    box-shadow: 0 0 10px #9dff4e, 0 0 40px #9dff4e, 0 0 80px #9dff4e;
-    
-}
 
 .bottom-menu {
     position: relative;
     display: flex;
     justify-content: space-evenly;
-    width: 1240px;
+    width: 1200px;
     height: 100px;
     margin: 0 auto;
     border: 1px solid #999999;
@@ -148,8 +106,28 @@ body {
 
 .bottom-menu-left button i {
     font-size: 35px;
+    cursor: pointer;
     color: rgb(77, 77, 77);
+}
 
+.bottom-menu-left button i:hover {
+    font-size: 40px;
+    color: rgb(20, 20, 20);
+    transition: all 0.3s ease;
+}
+
+.clear-btn {
+    border: none;
+    background-color: transparent;
+    font-family: 'Poiret One', cursive; 
+    font-size: 30px;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+
+.clear-btn:hover {
+    transition: all 0.3s ease;
+    font-size: 35px;
 }
 
 .tempo-input {
@@ -165,13 +143,14 @@ body {
     height: 50px;
     width: 90px;
     margin-left: 10px;
-    border-radius: 5px;
     font-size: 30px;
     text-align: center;
     font-family: 'Poiret One', cursive; 
     font-weight: 600;
     letter-spacing: 4px;
-
+    background-color: transparent;
+    border: none;
+    outline: none;
 }
 
 .github-link, .linkedin-link {
@@ -200,3 +179,6 @@ body {
 	-webkit-transform: scale(1);
 	transform: scale(1);
 }
+
+
+
