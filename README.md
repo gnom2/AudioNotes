@@ -49,5 +49,11 @@ Day 3:
 - Refactor code for sound key-press 
 - Finish piano styling
 
+Day 4:
+- Fix piano keys to play a single note when pressed
+- Complete redesign of app to be dark themed
+- Styling completed
+- Add 4 new synth selections
+
 ### (Bonus Features) 
 
