@@ -51,8 +51,8 @@ body {
 }
 
 .note-container {
-    width: 1060px;
-    height: 750px;
+    width: 1110px;
+    height: 820px;
     border: 1px solid gray;
     background-color: rgb(231, 231, 231);
 }
@@ -108,6 +108,7 @@ body {
     font-size: 35px;
     cursor: pointer;
     color: rgb(77, 77, 77);
+    outline: none;
 }
 
 .bottom-menu-left button i:hover {

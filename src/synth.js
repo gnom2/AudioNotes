@@ -33,7 +33,7 @@ const reset = document.body.querySelector('.rewind-btn');
 // const notes = ['C4', 'C#4', 'D4', 'D#4', 'E4', 'F4', 'F#4', 'G4', 'G#4', 'A4', 'A#4', 'B4', 'C5', 'C#5', 'D5', 'D#5', 'E5', 'F5', 'F#5', 'G5', 'G#5', 'A5', 'A#5', 'B5']
 const notes = ['C6', 'B5', 'A#5', 'A5', 'G#5', 'G5', 'F#5', 'F5', 'E5', 'D#5', 'D5', 'C#5', 'C5', 'B4', 'A#4', 'A4', 'G#4', 'G4', 'F#4', 'F4', 'E4', 'D#4', 'D4', 'C#4', 'C4']
 
-Tone.Transport.scheduleRepeat(repeat, '8n');
+Tone.Transport.scheduleRepeat(repeat, '4n');
 Tone.Transport.bpm.value = 128;
 
 play.addEventListener('click', async () => {
@@ -68,8 +68,25 @@ function repeat(time) {
     for (let i = 0; i < rows.length; i++) {
         let note = notes[i];
         let row = rows[i];
+
+        if (step !== 0) {
+            let prevInput = row.querySelector(`label:nth-child(${step})`);
+            let prevBox = prevInput.querySelector('div');
+
+            prevBox.style.boxShadow = '';
+        } else if (step === 0) {
+            let lastInput = row.querySelector(`label:last-child`);
+            let lastBox = lastInput.querySelector('div');
+
+            lastBox.style.boxShadow = '';
+        }
+
+
         let input = row.querySelector(`label:nth-child(${step + 1})`);
         let checkbox = input.querySelector('input');
+        let box = input.querySelector('div');
+
+        box.style.boxShadow = '0 0 0.5px #cccccc, 0 0 2px #727272, 0 0 4px #727272';
         // debugger
         if (checkbox.checked) {
             // debugger
@@ -82,4 +99,7 @@ function repeat(time) {
         }
     }
     index++;
+
+
+
 };
