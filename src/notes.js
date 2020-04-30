@@ -30,10 +30,11 @@ for (let i = 0; i < keys.length; i++) {
     let row = rows[i];
     pianoKey = document.querySelector(`.note-${i + 1}`);
 
-    buttons[i].addEventListener('click', async () => {
+    buttons[i].addEventListener('click', async function (e) {
+        e.stopPropagation();
         pianoKey = document.querySelector(`.note-${i + 1}`);
         row.classList.remove(`row${i + 1}-animation`);
-        debugger
+
         void row.offsetWidth;
         await ToneNote.start();
         synthNote.triggerAttackRelease(keys[i], '8n').volume.value = 3;

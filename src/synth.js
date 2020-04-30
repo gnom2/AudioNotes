@@ -3,22 +3,58 @@
 import * as Tone from "tone";
 
 
-const synth = new Tone.PolySynth({
-    "oscillator": {
-        "type": "sine"
-    },
-    "envelope": {
-        "attack": 0.1,
-        "decay": 0.15,
-        "sustain": 10.0,
-        "release": 5.4
-    }
-});
+const synths = [
+    new Tone.PolySynth(Tone.Synth, {
+        "oscillator": {
+            "type": "sawtooth"
+        }
+    }),
+    new Tone.PolySynth(Tone.Synth, {
+        "oscillator": {
+            "type": "sine"
+        }
+    }),
+    new Tone.PolySynth(Tone.Synth, {
+        "oscillator": {
+            "type": "triangle"
+        }
+    }),
+    new Tone.PolySynth(Tone.Synth, {
+        "oscillator": {
+            "type": "square"
+        }
+    }),
+]
+
+// const synth = new Tone.PolySynth(Tone.Synth, {
+//     "oscillator": {
+//         "type": "sawtooth"
+//     }
+// });
 
 const gain = new Tone.Gain(0.5);
 gain.toMaster();
 
+let synth = synths[0];
+
+const options = document.body.querySelectorAll('li');
+
+for (let i = 0; i < options.length; i++) {
+    let option = options[i];
+    option.addEventListener('click', async () => {
+        debugger;
+        synth = synths[option.value];
+        option.classList.add('active');
+        synth.connect(gain);
+    })
+}
+
+
+
 synth.connect(gain);
+
+
+
 
 let index = 0;
 
@@ -30,7 +66,6 @@ const rows = document.body.querySelectorAll('.note-container > div');
 const tempo = document.body.querySelector('.tempo-control')
 const clear = document.body.querySelector('.clear-btn');
 const reset = document.body.querySelector('.rewind-btn');
-// const notes = ['C4', 'C#4', 'D4', 'D#4', 'E4', 'F4', 'F#4', 'G4', 'G#4', 'A4', 'A#4', 'B4', 'C5', 'C#5', 'D5', 'D#5', 'E5', 'F5', 'F#5', 'G5', 'G#5', 'A5', 'A#5', 'B5']
 const notes = ['C6', 'B5', 'A#5', 'A5', 'G#5', 'G5', 'F#5', 'F5', 'E5', 'D#5', 'D5', 'C#5', 'C5', 'B4', 'A#4', 'A4', 'G#4', 'G4', 'F#4', 'F4', 'E4', 'D#4', 'D4', 'C#4', 'C4']
 
 Tone.Transport.scheduleRepeat(repeat, '4n');
@@ -52,7 +87,13 @@ tempo.addEventListener('change', e => {
 
 reset.addEventListener('click', e => {
     index = 0;
-    spans.forEach(span => span.classList.remove('highlight'))
+    for (let i = 0; i < rows.length; i++) {
+        let row = rows[i];
+        let inputs = row.querySelectorAll('label div');
+        for (let j = 0; j < inputs.length; j++) {
+            inputs[j].style.boxShadow = '';
+        }
+    }
 })
 
 clear.addEventListener('click', e => {
@@ -60,6 +101,15 @@ clear.addEventListener('click', e => {
         if (check[i].checked === true) {
             check[i].checked = false
         }
+
+        if (rows[i]) {
+            let row = rows[i];
+            let inputs = row.querySelectorAll('label div');
+            for (let j = 0; j < inputs.length; j++) {
+                inputs[j].style.boxShadow = '';
+            }
+        }
+
     }
 })
 
@@ -86,15 +136,9 @@ function repeat(time) {
         let checkbox = input.querySelector('input');
         let box = input.querySelector('div');
 
-        box.style.boxShadow = '0 0 0.5px #cccccc, 0 0 2px #727272, 0 0 4px #727272';
-        // debugger
+        box.style.boxShadow = '0 0 0.7px #7fff08, 0 0 2.5px #7fff08, 0 0 6px #7fff08';
+
         if (checkbox.checked) {
-            // debugger
-            // if (i <= 8 || i === 11) {
-            //     synth.triggerAttackRelease(note, '8n', time).volume.value = 3;
-            // } else {
-            //     synth.triggerAttackRelease('8n', time).volume.value = 3;
-            // }
             synth.triggerAttackRelease(note, '8n', time).volume.value = 3;
         }
     }
