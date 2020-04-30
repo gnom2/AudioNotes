@@ -42,14 +42,12 @@ const options = document.body.querySelectorAll('li');
 for (let i = 0; i < options.length; i++) {
     let option = options[i];
     option.addEventListener('click', async () => {
-        debugger;
+
         synth = synths[option.value];
         option.classList.add('active');
         synth.connect(gain);
     })
 }
-
-
 
 synth.connect(gain);
 
@@ -143,7 +141,5 @@ function repeat(time) {
         }
     }
     index++;
-
-
 
 };

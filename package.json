@@ -47,6 +47,8 @@
   "dependencies": {
     "browserify": "^16.5.1",
     "fibers": "^4.0.3",
-    "regenerator-runtime": "^0.13.5"
+    "midi-writer-js": "^1.7.2",
+    "regenerator-runtime": "^0.13.5",
+    "scribbletune": "^3.5.3"
   }
 }
