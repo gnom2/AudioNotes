@@ -54,6 +54,9 @@ Day 4:
 - Complete redesign of app to be dark themed
 - Styling completed
 - Add 4 new synth selections
+- Add style to divide columns by 4
 
+
+Color credits to Sera
 ### (Bonus Features) 
 
