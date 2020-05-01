@@ -16,14 +16,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gnom2/Audionotes.git"
+    "url": "git+https://github.com/gnom2/AudioNotes.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gnom2/Audionotes/issues"
+    "url": "https://github.com/gnom2/AudioNotes/issues"
   },
-  "homepage": "https://github.com/gnom2/Audionotes#readme",
+  "homepage": "https://github.com/gnom2/AudioNotes#readme",
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
