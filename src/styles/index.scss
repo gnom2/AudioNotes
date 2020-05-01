@@ -37,6 +37,7 @@ body {
 .audio-top-menu {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   width: 1100px;
   height: 35px;
   background: linear-gradient(
@@ -69,8 +70,50 @@ body {
   color: #abcca0;
 }
 
-.audio-synth-menu .active {
-  display: block;
+.active {
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #39c726, 0 0 20px #3cfc23,
+      0 0 25px #3cfc23, 0 0 30px #3cfc23, 0 0 40px #3cfc23;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 20px #45e031, 0 0 30px #45e031,
+      0 0 40px #45e031, 0 0 50px #45e031, 0 0 60px #45e031, 0 0 80px #45e031;
+  }
+}
+
+.audio-beat-pattern {
+  font-family: "Poiret One", cursive;
+  text-decoration: none;
+  font-size: 15px;
+  color: #b0b7ba;
+  display: flex;
+  font-weight: 600;
+  align-items: center;
+  letter-spacing: 3px;
+  margin-right: 50px;
+}
+
+.pattern-list {
+  display: flex;
+  list-style-type: none;
+}
+
+.pattern-list li {
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+.pattern-list li:hover {
+  color: #abcca0;
 }
 
 #audio-container {
