@@ -54,6 +54,8 @@ Day 4:
 - Complete redesign of app to be dark themed
 - Styling completed
 - Add 4 new synth selections
+- Add 4 beat pattern / 16 beat pattern in addition to the default 8 beat pattern
+- Add neon lighting styling to the top menu buttons
 - Add style to divide columns by 4
 
 
