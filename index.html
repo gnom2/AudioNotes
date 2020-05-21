@@ -13,6 +13,8 @@
     <meta property="og:description"
         content="Audionotes is a musical note taker where users can generate 8-beat MIDI melody and save them for reference." />
 
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/images/favicon-16x16.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./dist/main.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
@@ -24,9 +26,23 @@
 <body>
 
     <main>
-        <div class='modal modal-container'>
-            <div class='modal modal-1'>
+        <div id='modal'>
+            <div class='modal-1'>
+                <p>Select Synth</p>
+                <p>Select Pattern Sequence</p>
+            </div>
+            <div class='modal-2'>
+                <p>Piano Roll highlights rows by key</p>
+                <p>Each sequencer is represented as follows</p>
+                <p>Column: Different keys in a scale</p>
+                <p>Row: Each beat in a loop</p>
 
+                <p>Each sound is activated by activating a step from the associated row or column.</p>
+            </div>
+            <div class='modal-3'>
+                <p>Play/Pause/Rewind/Clear</p>
+                <p>Enter BPM Tempo</p>
+                <p>External Links</p>
             </div>
         </div>
         <div class="main">
@@ -51,7 +67,7 @@
                         </li>
                     </ul>
 
-                    <div class='tutorial-button'>Tutorial</div>
+                    <div id='tutorial-button'>Tutorial</div>
 
                     <div class='audio-beat-pattern'>
                         Pattern:
@@ -1804,6 +1820,7 @@
                         <a href="https://www.linkedin.com/in/jun-hyeok-scott-lee-18a62851/">LinkedIn</a>
                     </div>
                 </div>
+
 
             </div>
         </div>

@@ -112,7 +112,6 @@ const notes = [
 ];
 
 play.addEventListener("click", async () => {
-  // debugger
   Tone.start();
   Tone.Transport.start();
 });
