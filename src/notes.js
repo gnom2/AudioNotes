@@ -1,6 +1,5 @@
 const ToneNote = require("tone");
 import { Synth, Gain } from "tone";
-// import ToneNote from "Tone";
 
 // const synthNote = new ToneNote.PolySynth({
 //     "oscillator": {
