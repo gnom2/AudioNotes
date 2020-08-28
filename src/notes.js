@@ -10,8 +10,7 @@ import { Synth, Gain } from "tone";
 //         "decay": 0.15,
 //         "sustain": 0.3,
 //         "release": 10
-//     }
-// })
+
 
 const synthNotes = [
   new ToneNote.PolySynth(ToneNote.Synth, {
